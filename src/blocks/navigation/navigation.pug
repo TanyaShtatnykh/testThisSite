@@ -1,0 +1,12 @@
+mixin navigation(modifier)
+  section.navigation&attributes(attributes)
+    .navigation__area
+      h2.navigation__title 
+        span.navigation__titleD Здесь можно оплатить
+        span.navigation__titleM Узнайте, как оплатить
+      ul.navigation__menu
+        li.navigation__menu-item: a.navigation__menu-link(href="#traffic-fines") Штрафы ГИБДД
+        li.navigation__menu-item: a.navigation__menu-link(href="#court-debts") Судебные задолженности
+        li.navigation__menu-item: a.navigation__menu-link(href="#taxes") Налоги
+        li.navigation__menu-item: a.navigation__menu-link(href="#services") Услуги Росреестра
+        li.navigation__menu-item.navigation__menu-item--no-link и другие услуги

@@ -1,0 +1,22 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__menu-area
+      h2.header__menu-title Личный кабинет
+      button.header__enter-btn(type="button") Вход в личный кабинет
+      h2.header__menu-title Как это работает
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item: a.header__menu-link(href="#") Условия использования сервиса
+          li.header__menu-item: a.header__menu-link(href="#") Способы оплаты
+          li.header__menu-item: a.header__menu-link(href="#") Часто задаваемые вопросы
+          li.header__menu-item: a.header__menu-link(href="#") Служба поддержки
+    .header__area
+      .header__burger-btn
+        .header__burger-line
+        .header__burger-line
+        .header__burger-line
+        .header__burger-line
+      a.header__logo-link(href="#"): img.header__logo(src="img/logo.png", alt="Logo")
+      button.header__help-btn(type="button")
+        include ./img/ic_help.svg
+      +popup

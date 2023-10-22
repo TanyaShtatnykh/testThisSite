@@ -1,0 +1,12 @@
+mixin modal(modifier)
+  .modal&attributes(attributes)
+    .modal__area
+      button.modal__btn-close(type="button")
+        include ./img/ic_close.svg
+      h2.modal__title Введите логин и пароль для входа в Личный кабинет
+      form.modal__form
+        input.modal__field(type="text" placeholder="Логин")
+        input.modal__field(type="password" placeholder="Пароль")
+        button.modal__btn-enter(type="button") Войти
+      a.modal__link(href="#") Напомнить пароль
+      a.modal__link(href="#") Регистрация

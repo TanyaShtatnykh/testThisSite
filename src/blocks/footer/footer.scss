@@ -1,0 +1,30 @@
+.footer {
+  background-color: #00468533;
+  &__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 32px 35px 40px 32px;
+  }
+  &__text {
+    max-width: 286px;
+    font-size: 1em;
+    line-height: lh-to-pct(22, 16);
+    font-weight: 600;
+  }
+  @media screen and (max-width: 799.98px) {
+    &__area {
+      flex-direction: column;
+      padding: 20px 20px 18px;
+    }
+    &__text {
+      max-width: 100%;
+      margin-bottom: 17px;
+      font-size: px-to-em(12);
+      line-height: lh-to-pct(16, 12);
+    }
+  }
+}

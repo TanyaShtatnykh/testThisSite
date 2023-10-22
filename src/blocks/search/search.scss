@@ -1,0 +1,123 @@
+.search {
+        padding-top: 69px;
+        background-image: url("../img/bg_search.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    &__area {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0px auto;
+        padding: 89px 159.5px 112px 161px; 
+    }
+    &__title {
+        margin-bottom: 16px;
+        font-size: px-to-em(36);
+        line-height: lh-to-pct(49, 36);
+        font-weight: 600;
+        color: #ffffff;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    &__field {
+        width: 100%;
+        margin-right: 17.5px;
+        padding: 19px 24px;
+        border: 2px solid #00468533;
+        border-radius: 8px;
+        outline: none;
+        font-size: px-to-em(16);
+        line-height: lh-to-pct(22, 16);
+        font-weight: 400;
+        color: #00000075;
+        transition: 0.3s;
+        &::-webkit-input-placeholder {
+            transition: 0.3s;
+        }
+        &:focus {
+            &::-webkit-input-placeholder {
+                color: #00000033;
+            }
+            color: #000000;
+        }  
+    }
+    &__btn {
+        padding: 14px 32px 13px;
+        border: none;
+        border-radius: 8px;
+        background-color:#D30531;
+        font-size: px-to-em(24);
+        line-height: lh-to-pct(33, 24);
+        font-weight: 600;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: #E1133F;
+        }
+        svg {
+            display: none;
+        }
+    }
+    &__comment {
+        font-size: px-to-em(16);
+        line-height: lh-to-pct(22, 16);
+        font-weight: 400;
+        color: #ffffff;
+    }
+    @media screen and (max-width: 991px) {
+        &__area {
+            padding: 40px 20px; 
+        }
+    }
+    @media screen and (max-width: 799.98px) {
+        padding-top: 48px;
+        &__title {
+            align-self: center;
+            margin-bottom: 19px;
+            font-size: px-to-em(20);
+            line-height: lh-to-pct(27, 20);
+        }
+        &__form {
+            margin-bottom: 8px;
+        }
+        &__field {
+            margin-right: 0px;
+            padding: 11px 12px;
+            line-height: lh-to-pct(24, 16);
+        }
+        &__btn {
+            height: 48px;
+            margin-right: -100%;
+            padding: 12px;
+            background-color: transparent;
+            transform: translateX(-100%);
+            svg {
+                display: flex;
+            }
+            path {
+                transition: 0.3s;
+            }
+            &:hover {
+                background-color: transparent;
+                path {
+                    fill: #569DDC;
+                }
+            }
+        }
+        &__btn-name {
+            display: none;
+        }
+        &__comment {
+            font-size: px-to-em(12);
+            line-height: lh-to-pct(16, 12);
+        }
+   }
+}
