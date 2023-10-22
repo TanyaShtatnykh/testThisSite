@@ -78,6 +78,7 @@
     position: relative;
     width: 30px;
     height: 25px;
+    margin-top: 5px;
     cursor: pointer;
     &:hover {
         .header__burger-line {
@@ -116,6 +117,10 @@
     &:nth-child(4) {
       top: 20px;
     }
+  }
+  &__logo-link {
+    height: 44px;
+    margin-right: 25px;
   }
   &__help-btn {
     width: 48px;
@@ -163,6 +168,7 @@
     &__burger-btn {
       width: 23px;
       height: 18px;
+      margin-top: 0px;
       &--open {
         .header__burger-line:nth-child(1), .header__burger-line:nth-child(4) {
           top: 8px;

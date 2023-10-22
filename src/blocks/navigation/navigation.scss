@@ -25,9 +25,12 @@
         max-width: 533px;
     }
     &__menu-item {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         &:nth-of-type(n+2) {
             margin-left: 28px;
+        }
+        &:nth-of-type(4) {
+            margin-left: 0px;
         }
         &--no-link {
             font-size: px-to-em(19);
